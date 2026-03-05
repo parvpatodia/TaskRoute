@@ -1,0 +1,50 @@
+{
+    "text_generation": [
+      {
+        "name": "gpt-4o-mini",
+        "provider": "openai",
+        "cost_per_1k_tokens_usd": 0.0006,
+        "latency": "fast",
+        "quality": 7
+      },
+      {
+        "name": "gpt-4.1",
+        "provider": "openai",
+        "cost_per_1k_tokens_usd": 0.01,
+        "latency": "medium",
+        "quality": 9
+      }
+    ],
+    "image_generation": [
+      {
+        "name": "sdxl",
+        "provider": "replicate",
+        "cost_per_image_usd": 0.01,
+        "latency": "medium",
+        "quality": 7
+      },
+      {
+        "name": "dall-e",
+        "provider": "openai",
+        "cost_per_image_usd": 0.04,
+        "latency": "fast",
+        "quality": 9
+      }
+    ],
+    "web_scraping": [
+      {
+        "name": "apify",
+        "provider": "apify",
+        "cost_per_request_usd": 0.005,
+        "latency": "medium",
+        "quality": 8
+      },
+      {
+        "name": "basic-http",
+        "provider": "requests",
+        "cost_per_request_usd": 0.0001,
+        "latency": "fast",
+        "quality": 5
+      }
+    ]
+  }
