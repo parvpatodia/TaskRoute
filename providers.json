@@ -1,50 +1,85 @@
 {
-    "text_generation": [
+    "generated_at": null,
+    "items": [
       {
+        "provider": "openai",
         "name": "gpt-4o-mini",
-        "provider": "openai",
-        "cost_per_1k_tokens_usd": 0.0006,
+        "task_types": ["text_generation"],
+        "price": 0.0006,
+        "price_unit": "per_1k_tokens_usd",
         "latency": "fast",
-        "quality": 7
+        "quality": 7,
+        "reliability": 0.98
       },
       {
+        "provider": "openai",
         "name": "gpt-4.1",
-        "provider": "openai",
-        "cost_per_1k_tokens_usd": 0.01,
+        "task_types": ["text_generation"],
+        "price": 0.01,
+        "price_unit": "per_1k_tokens_usd",
         "latency": "medium",
-        "quality": 9
-      }
-    ],
-    "image_generation": [
-      {
-        "name": "sdxl",
-        "provider": "replicate",
-        "cost_per_image_usd": 0.01,
-        "latency": "medium",
-        "quality": 7
+        "quality": 9,
+        "reliability": 0.98
       },
       {
+        "provider": "openai",
         "name": "dall-e",
-        "provider": "openai",
-        "cost_per_image_usd": 0.04,
+        "task_types": ["image_generation"],
+        "price": 0.04,
+        "price_unit": "per_image_usd",
         "latency": "fast",
-        "quality": 9
-      }
-    ],
-    "web_scraping": [
-      {
-        "name": "apify",
-        "provider": "apify",
-        "cost_per_request_usd": 0.005,
-        "latency": "medium",
-        "quality": 8
+        "quality": 9,
+        "reliability": 0.97
       },
       {
-        "name": "basic-http",
-        "provider": "requests",
-        "cost_per_request_usd": 0.0001,
+        "provider": "replicate",
+        "name": "sdxl",
+        "task_types": ["image_generation"],
+        "price": 0.01,
+        "price_unit": "per_image_usd",
+        "latency": "medium",
+        "quality": 7,
+        "reliability": 0.94
+      },
+      {
+        "provider": "aws",
+        "name": "batch-transform",
+        "task_types": ["data_processing"],
+        "price": 0.002,
+        "price_unit": "per_job_usd",
         "latency": "fast",
-        "quality": 5
+        "quality": 6,
+        "reliability": 0.97
+      },
+      {
+        "provider": "apify",
+        "name": "apify",
+        "task_types": ["web_scraping"],
+        "price": 0.005,
+        "price_unit": "per_request_usd",
+        "latency": "medium",
+        "quality": 8,
+        "reliability": 0.95
+      },
+      {
+        "provider": "requests",
+        "name": "basic-http",
+        "task_types": ["web_scraping"],
+        "price": 0.0001,
+        "price_unit": "per_request_usd",
+        "latency": "fast",
+        "quality": 5,
+        "reliability": 0.93
+      },
+      {
+        "provider": "databricks",
+        "name": "spark-job",
+        "task_types": ["data_processing"],
+        "price": 0.003,
+        "price_unit": "per_job_usd",
+        "latency": "medium",
+        "quality": 7,
+        "reliability": 0.95
       }
     ]
   }
