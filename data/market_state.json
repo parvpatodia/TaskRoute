@@ -1,0 +1,11 @@
+{
+  "updated_at": 1772740721,
+  "provider_multipliers": {
+    "openai": 1.4224,
+    "replicate": 0.7539,
+    "aws": 1.0371,
+    "databricks": 0.9471,
+    "apify": 0.9625,
+    "requests": 1.0308
+  }
+}
